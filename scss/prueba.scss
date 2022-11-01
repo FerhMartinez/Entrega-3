@@ -1,16 +1,22 @@
-/* Estilos generales */
+//Estilos generales 
 *{
     text-decoration: none;
     margin: 0px;
     padding: 0px;
-    $fuentes:sans-serif;
 }
-/* Colores utilizados*/
-@import"colores"
+//Colores utilizados
+$colores:(
+    grey:#cccc,
+    red:brown,
+    black:black
+);
 
 #container{
     width: 90%;
     height: auto;
     margin: 0px;
-    border: lpx solid$grey;
+    border: 2px solid map-get($colores,grey);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 600px;
 }
