@@ -1,7 +1,16 @@
-p{
-    color:red;
-    font-size:60px;
-    width:400px;
-    height:400px;
-    background-color:tomato;
+/* Estilos generales */
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    $fuentes:sans-serif;
+}
+/* Colores utilizados*/
+@import"colores"
+
+#container{
+    width: 90%;
+    height: auto;
+    margin: 0px;
+    border: lpx solid$grey;
 }
