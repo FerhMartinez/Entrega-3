@@ -1,5 +1,5 @@
 //Estilos generales 
-*{
+* {
     text-decoration: none;
     margin: 0px;
     padding: 0px;
@@ -7,32 +7,73 @@
 }
 
 //Colores utilizados
-$colores:(
+$colores: (
     grey:#cccc,
     red:brown,
     black:black
 );
 
-#container{
+#container {
     width: 90%;
     height: auto;
     margin: 0px;
-    border: 2px solid map-get($colores,grey);
+    border: 2px solid map-get($colores, grey);
     margin-top: 40px;
     margin-bottom: 40px;
     min-height: 600px;
-}
-#header{
+    }
+
+
+#header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     height: 120px;
-    border-bottom: 2px solid map-get($colores,grey); 
+    border-bottom: 2px solid map-get($colores, grey);
+
+        }
 
 
-    .logo{
+    .logo {
+        flex-grow: 1;
         flex-basis: 65%;
 
-    }
-}
+        padding: 10px;
+        margin-left: 20px;
+        color: map-get($colores, black);
+        text-shadow: 1px 1px 1px map-get($colores, grey);
+        text-transform: uppercase;
+        }
+
+        .logo h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            font-size: 33px;
+
+        }
+        
+
+
+        #menu {
+            flex-grow: 1;
+            flex-basis: 30%;
+            height: 100%;
+        }
+        #menu >ul{
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+        #menu a{
+            text-transform: uppercase;
+            color:#cccc
+        }
+
+        

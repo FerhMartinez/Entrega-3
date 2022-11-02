@@ -23,8 +23,43 @@
   height: 120px;
   border-bottom: 2px solid rgba(204, 204, 204, 0.8);
 }
-#header .logo {
+
+.logo {
+  flex-grow: 1;
   flex-basis: 65%;
+  padding: 10px;
+  margin-left: 20px;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(204, 204, 204, 0.8);
+  text-transform: uppercase;
+}
+
+.logo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 33px;
+}
+
+#menu {
+  flex-grow: 1;
+  flex-basis: 30%;
+  height: 100%;
+}
+
+#menu > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#menu a {
+  text-transform: uppercase;
+  color: rgba(204, 204, 204, 0.8);
 }
 
 /*# sourceMappingURL=prueba.css.map */
